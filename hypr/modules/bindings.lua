@@ -4,7 +4,7 @@ local mainMod = "SUPER"
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("alacritty"))
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("helium-browser"))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("wofi --show drun"))
-hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("sudo throne-bin"))
+
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 
 -- Screenshot via hyprshot utility
