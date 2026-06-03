@@ -1,3 +1,7 @@
+------------
+-- RICING --
+------------
+
 hl.config({
 	general = {
 		gaps_in = 2,

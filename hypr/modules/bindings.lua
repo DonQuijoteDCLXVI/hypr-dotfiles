@@ -1,3 +1,7 @@
+--------------
+-- BINDINGS --
+--------------
+
 local mainMod = "SUPER"
 
 -- Main key bindings
@@ -12,6 +16,7 @@ local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region"))
+hl.bind(mainMod .. " + ALT + S", hl.dsp.exec_cmd("hyprshot -m region --clipboard-only"))
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"), { repeating = true })
